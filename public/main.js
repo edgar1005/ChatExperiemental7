@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8080",{'forceNew':true}); 
+var socket = io.connect("https://chatexperimenta7-3.onrender.com",{'forceNew':true}); 
 
 socket.on('messages',(data)=>{//crea un evento que se requiere escuchar llamado 'messages' y el callback con los datos que va recibir 
     console.log(data);
