@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion con Sockets </title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/373d278a84.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Chat de Prueba</h1>
+    <div id="messages" style="overflow-y: auto;height: 80vh;"></div>
+    <br>
+    <div>
+        <form onsubmit="return addMessage(this)" style="padding: 1vw;display:flex;justify-content: center;">
+            <input type="text" id="username" placeholder="Nombre">
+            <input type="text" id="texto"    placeholder="Mensaje">
+            <button type="submit" style="background-color:rgb(33, 127, 242);color: azure;height: 5vh;width: 4vw;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+</body>
+</html>
